@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Key</title>
+</head>
+
+<body style="background:#111;color:white;font-family:Arial;text-align:center;padding-top:100px;">
+
+<h1>🔑 KEY CỦA BẠN</h1>
+
+<h2 id="showkey"></h2>
+
+<script>
+
+const url = new URL(window.location.href);
+
+const key = url.searchParams.get("key");
+
+document.getElementById("showkey").innerText = key || "NO KEY";
+
+</script>
+
+</body>
+</html>
